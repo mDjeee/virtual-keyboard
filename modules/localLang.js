@@ -1,14 +1,15 @@
 function localLang() {
-  document.querySelectorAll('.letter').forEach(item => {
+  let letters = document.querySelectorAll('.letter');
+  letters.forEach((item, i) => {
     let en = item.dataset.en;
     let ru = item.dataset.ru;
     let shift = item.dataset.shift;
     let shiftRu = item.dataset.shiftRu;
-    item.dataset.en = ru;
-    item.dataset.ru = en;
-    item.dataset.shift = shiftRu;
-    item.dataset.shiftRu = shift;
-    item.textContent = item.dataset.en;
+    letters[i].dataset.en = ru;
+    letters[i].dataset.ru = en;
+    letters[i].dataset.shift = shiftRu;
+    letters[i].dataset.shiftRu = shift;
+    letters[i].textContent = item.dataset.en;
   });
 }
 

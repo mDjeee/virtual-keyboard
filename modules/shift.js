@@ -3,9 +3,9 @@ function shift(key) {
     if (key.dataset.code === e.code) {
       if (key.dataset.code === 'ShiftLeft' || key.dataset.code === 'ShiftRight') {
         let letters = document.querySelectorAll('.letter');
-        letters.forEach(item => {
+        letters.forEach((item, i) => {
           if (item.dataset.shift !== 'null') {
-            item.textContent = item.dataset.shift;
+            letters[i].textContent = item.dataset.shift;
           }
         });
       }
@@ -16,9 +16,9 @@ function shift(key) {
     if (key.dataset.code === e.code) {
       if (key.dataset.code === 'ShiftLeft' || key.dataset.code === 'ShiftRight') {
         let letters = document.querySelectorAll('.letter');
-        letters.forEach(item => {
+        letters.forEach((item, i) => {
           if (item.dataset.shift !== 'null') {
-            item.textContent = item.dataset.en;
+            letters[i].textContent = item.dataset.en;
           }
         });
       }
@@ -29,9 +29,9 @@ function shift(key) {
     if (e.target.dataset.code === 'ShiftLeft' || e.target.dataset.code === 'ShiftRight') {
       if (key.dataset.code === 'ShiftLeft' || key.dataset.code === 'ShiftRight') {
         let letters = document.querySelectorAll('.letter');
-        letters.forEach(item => {
+        letters.forEach((item, i) => {
           if (item.dataset.shift !== 'null') {
-            item.textContent = item.dataset.shift;
+            letters[i].textContent = item.dataset.shift;
           }
         });
       }
@@ -41,9 +41,9 @@ function shift(key) {
   document.addEventListener('mouseup', () => {
     if (key.dataset.code === 'ShiftLeft' || key.dataset.code === 'ShiftRight') {
       let letters = document.querySelectorAll('.letter');
-      letters.forEach(item => {
+      letters.forEach((item, i) => {
         if (item.dataset.shift !== 'null') {
-          item.textContent = item.dataset.en;
+          letters[i].textContent = item.dataset.en;
         }
       });
     }
