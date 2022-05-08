@@ -1,0 +1,165 @@
+.title {
+    text-align: center;
+    color: rgb(226, 205, 155);
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+.paragraph {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.keyboard {
+    width: 980px;
+    height: 290px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: rgb(212, 212, 207);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.textarea {
+    display: block;
+    width: 990px;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.letter {
+    background-color: rgb(154, 201, 183);
+    font-weight: bold;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    color:rgb(243, 243, 240);
+    line-height: 50px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.space {
+    width: 400px;
+}
+
+.backspace {
+    width: 140px;
+    background-color: rgb(226, 205, 155);
+}
+
+.delete {
+    width: 50px;
+    background-color: rgb(226, 205, 155);
+}
+
+.capsLock {
+    position: relative;
+    width: 100px;
+    background-color: rgb(226, 205, 155);
+}
+
+.capsLock::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.active::after {
+    background-color: rgb(202, 64, 64);
+}
+
+.tab {
+    width: 80px;
+    background-color: rgb(226, 205, 155);
+}
+
+.codeShift {
+    width: 125px;
+    background-color: rgb(226, 205, 155);
+}
+
+.ctrl, .win, .alt {
+    width: 70px;
+    background-color: rgb(226, 205, 155);
+}
+
+.codeEnter {
+    width: 150px;
+    background-color: rgb(226, 205, 155);
+}
+
+.backSlash {
+    width: 50px;
+}
+
+.green {
+    background-color: green;
+}
+
+.footer {
+    margin: 20px auto 0;
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rss {
+    display: block;
+    width: 80px;
+    background: url('https://rs.school/images/rs_school_js.svg');
+    background-repeat: no-repeat;
+    filter: invert(85%) sepia(17%) saturate(555%) hue-rotate(4deg) brightness(94%) contrast(92%);
+    cursor: pointer;
+    height: 40px;
+}
+
+.year {
+    font-size: 20px;
+    color: rgb(226, 205, 155);
+    font-weight: 700;
+}
+
+.github {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(226, 205, 155);
+}
+
+.twolang {
+    font-size: 20px;
+    text-align: center;
+}
+
+.textgreen {
+    color: green;
+    font-weight: 700;
+    text-decoration: underline green 2px
+}
