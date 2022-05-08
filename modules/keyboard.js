@@ -262,7 +262,7 @@ const arrKey = [
       shiftRu: null,
       className: 'delete',
       class: 'letter',
-      code: 'delete'
+      code: 'Delete'
     }
   ],
   [
