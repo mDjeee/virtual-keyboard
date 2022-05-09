@@ -55,6 +55,15 @@ html,body {
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    transition: all 0.3s;
+}
+
+.letter:hover{
+    background-color: rgb(91, 133, 91);
+}
+
+.letter:active{
+    background-color: green;
 }
 
 .space {
@@ -120,6 +129,7 @@ html,body {
 
 .green {
     background-color: green;
+    border-radius: 15px;
 }
 
 .footer {
